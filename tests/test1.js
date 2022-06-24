@@ -7,6 +7,8 @@ async function run(){
     const serverList = await qemuManager.getServers();
     const targetServer = serverList[0];
 
+    targetServer.cpuCores = 4;
+
     // var newDisk = new QemuDisk();
     // newDisk.bootOrder = 1;
     // newDisk.target = "sdb";
@@ -14,7 +16,7 @@ async function run(){
 
     // targetServer.attachDisk(newDisk)
 
-    console.log(targetServer.xml.domain.cpu)
+    console.log(targetServer.cpu)
 }
 
 run()
