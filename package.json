@@ -1,8 +1,8 @@
 {
-  "name": "qemu_lib",
+  "name": "qemu_management_api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/lib.js",
   "directories": {
     "lib": "lib",
     "test": "tests"
@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jeroen de Kuijper",
   "license": "ISC",
   "dependencies": {
     "xml2js": "^0.4.23"
