@@ -231,8 +231,7 @@
           {
             "model": [
               {
-                "$": { "type": "virtio", "heads": "1", "primary": "yes" },
-                "acceleration": [{ "$": { "accel3d": "yes" } }]
+                "$": { "type": "qxl", "ram": "65536", "vram": "65536", "vgamem": "16384", "heads": "1", "primary": "yes" }
               }
             ],
             "address": [
