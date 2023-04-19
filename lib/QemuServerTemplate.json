@@ -250,17 +250,7 @@
         "serial": [
           {
             "$": { "type": "pty" },
-            "target": [{ "$": { "port": "0" } }],
-            "address": [
-              {
-                "$": {
-                  "type": "virtio-serial",
-                  "controller": "0",
-                  "bus": "0",
-                  "port": "2"
-                }
-              }
-            ]
+            "target": [{ "$": { "port": "0", "type": "isa-serial" }, "model": [{ "$": { "name": "isa-serial" } }] }],
           }
         ],
         "tpm": [
