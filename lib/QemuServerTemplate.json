@@ -247,6 +247,32 @@
             ]
           }
         ],
+        "serial": [
+          {
+            "$": { "type": "pty" },
+            "target": [{ "$": { "port": "0" } }],
+            "address": [
+              {
+                "$": {
+                  "type": "virtio-serial",
+                  "controller": "0",
+                  "bus": "0",
+                  "port": "2"
+                }
+              }
+            ]
+          }
+        ],
+        "tpm": [
+          {
+            "$": { "model": "tpm-crb" },
+            "backend": [
+              {
+                "$": { "type": "emulator", "version": "2.0" }
+              }
+            ]
+          }
+        ],
         "memballoon": []
       }
     ]
